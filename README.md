@@ -11,9 +11,9 @@ Call <code>createElement</code> function and pass params as object, example: <co
 - <code>inner</code> , innerHTML of element
 - <code>cls</code> , element classes , pass one class as string , pass multiple as array, example <code>cls: [ 'class1', 'class2']</code>
 - <code>id</code> , element id
-- <code>style</code> , element inline style
+- <code>style</code> , pass element inline style as string , example: <code>"background: #000;"</code>
 - <code>placeholder</code> , element placeholder for input and textarea
-- <code>type</code> , element type for input and button , default: <code>"text"</code>
+- <code>type</code> , element type for input and button
 - <code>eventName</code> , element event , example: <code>"click"</code>
 - <code>eventFunc</code> , event function , default: <code>() => console.log('hello world!')</code>
 - <code>exeOnce</code> , execute event once , default: <code>false</code>
