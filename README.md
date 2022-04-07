@@ -1,8 +1,8 @@
 # createElement.js
 A module for making create html element easy
 ## How To import
-<code>import createElement from './createElement.js';</code>
-## How To Use
+<code>import createElement, { get } from './createElement.js';</code>
+## Create Element
 Call <code>createElement</code> function and pass params as object, example: <code>createElement({ tagName: 'nav' })</code>
 - <code>tagName</code> , name of tag , default: <code>"div"</code>
 - <code>target</code> , target tag id, class or tagName , default: <code>"body"</code>
@@ -17,3 +17,7 @@ Call <code>createElement</code> function and pass params as object, example: <co
 - <code>eventName</code> , element event , example: <code>"click"</code>
 - <code>eventFunc</code> , event function , default: <code>() => console.log('hello world!')</code>
 - <code>exeOnce</code> , execute event once , default: <code>false</code>
+
+## Get Element
+get element by calling get function - pass first param as target element and pass second one as boolean for getting a nodeList , <br>
+example: <code>get('targetTag', true)[indexOfElement].classList</code>
